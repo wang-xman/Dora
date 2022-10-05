@@ -57,6 +57,15 @@ compares two objects of types `Ta` and `Tb` by calling operator `==` on them.
 Two objects in the comparison are not required to be the same type, yet both
 objects must implement operators `==` and `!=`.
 
+* Assert approximately equal
+```
+assert_approx_equal(int line, const Ta& a, const Tb& b, double err_margin)
+```
+compares the Euclidean norm of the difference bwteen `a` and
+`b` with the given `err_margin`. If it is smaller than `err_margin`,
+asserts true; otherwise throws assertion error. It is often used in
+numeric evaluation.
+
 * Assert true
 ```
 assert_true(int line, bool expr)
@@ -105,7 +114,7 @@ asserts if function invocation throws an error of type `E`.
 * Assert throw on a method
 ```
 template <class E, class C, typename T, typename... Args>
-void assert_throw(int line, C& obj, T (C::*method)(Args...), Args... args)
+void assert_method_throw(int line, C& obj, T (C::*method)(Args...), Args... args)
 ```
 asserts if method invocation throws an error of type `E`. The second argument
 is an object on which the method is invoked.

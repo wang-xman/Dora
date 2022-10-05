@@ -1,7 +1,5 @@
 /*
-* HEADER case.hpp
-* 
-* INCLUDE errors.hpp
+    HEADER case.hpp
 */
 #ifndef DORA_CASE_HPP_
 #define DORA_CASE_HPP_
@@ -10,9 +8,7 @@
 #include <vector>
 #include "errors.hpp"
 
-
-namespace dora { // namespace dora
-
+namespace dora {
 
 // Case pool is a container of function pointers.
 class CasePool {
@@ -20,14 +16,14 @@ public:
     CasePool() {}
     std::vector<void (*)()> function_ptr;
     
-    void operator=(void(*)());
+    void operator=( void(*)() );
 };
 
 
 class TestCase {
 protected:
-    std::string current_test_file_ = "";
-    std::string current_test_func_ = "";
+    std::string current_test_file = "";
+    std::string current_test_func = "";
 
 public:
     CasePool pool;
@@ -36,5 +32,5 @@ public:
 };
 
 
-} // end namespace dora
+} // end dora
 #endif

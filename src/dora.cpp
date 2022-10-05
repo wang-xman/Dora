@@ -1,5 +1,4 @@
 /*
-* SOURCE dora.cpp
-* HEADER dora.hpp
+    SOURCE dora.cpp
 */
 #include "dora.hpp"

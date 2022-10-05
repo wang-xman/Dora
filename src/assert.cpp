@@ -1,22 +1,21 @@
 /*
-* SOURCE assert.cpp
+    SOURCE assert.cpp
 */
 #include "assert.hpp"
 
-namespace dora { // namespace dora
-
+namespace dora {
 
 /*
-* Assert true on expression
-*
-* ARGUMENTS
-*     line : Line number of the line at which assertion
-*         function is invoked.
-*
-*     expr (bool) : A boolean type expression, or a lambda
-*         function.
+    Assert true on expression
+    
+    ARGUMENTS
+    
+    line : Line number of the line at which assertion function is invoked.
+
+    expr (bool) : A boolean type expression, or a lambda function.
 */
-void assert_true(int line, bool expr) {
+void assert_true(int line, bool expr)
+{
     if (expr != true) {
         std::string errmsg = "Assert true failed. "
                              "Expression evaluated false.";
@@ -26,16 +25,16 @@ void assert_true(int line, bool expr) {
 
 
 /*
-* Assert false on expression
-*
-* ARGUMENTS
-*     line : Line number of the line at which assertion
-*         function is invoked.
-*
-*     expr (bool) : A boolean type expression, or a lambda
-*         function.
+    Assert false on expression
+    
+    ARGUMENTS
+    
+    line : Line number of the line at which assertion function is invoked.
+
+    expr (bool) : A boolean type expression, or a lambda function.
 */
-void assert_false(int line, bool expr) {
+void assert_false(int line, bool expr)
+{
     if (expr == true) {
         std::string errmsg = "Assert false failed. "
                              "Expression evaluated true.";
@@ -43,5 +42,4 @@ void assert_false(int line, bool expr) {
     }
 }
 
-
-} // end namespace dora
+} // end dora
