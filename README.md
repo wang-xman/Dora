@@ -4,8 +4,8 @@ assertion functions. Without heavy overhead, Dora is suitable for small
 projects.
 
 ## Version information
-Version: 0.0.1
-Updated: 3 January 2022.
+Version: 0.0.2
+Updated: 5 Ocotber 2022.
 Compile: g++ 9.3.0 on Ubuntu 20.04 / clang Apple LLVM 9.1.0 (clang-902.0.39.2)
 
 ## Quick start guide
