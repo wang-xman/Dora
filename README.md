@@ -1,12 +1,27 @@
-# Dora - A super light-weight C++ unittest library
-Dora, the explorer! Dora provides easy-to-use test case containers and
+# Dora - Super light-weight C++ unittest library
+Dora provides easy-to-use test case containers and
 assertion functions. Without heavy overhead, Dora is suitable for small
 projects.
 
 ## Version information
-Version: 0.0.2
-Updated: 5 Ocotber 2022.
-Compile: g++ 9.3.0 on Ubuntu 20.04 / clang Apple LLVM 9.1.0 (clang-902.0.39.2)
+
+* Version: 0.0.3
+
+* Updated: 25 March 2022.
+
+* Compile: g++ 10.3.0 on Ubuntu 20.04
+
+## Compile
+The shared library can be compiled as follows. In the root directory, run
+```
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+```
+the shared library `libdora.so` can be found inside `/build/lib`.
+
+
 
 ## Quick start guide
 To create a test case pool, simply instantiate

@@ -3,6 +3,7 @@
 /build
 build
 
+CMakeFiles
 *.o
 *.out
 *.log
